@@ -1,5 +1,5 @@
 task:
-    name: aosp # Project name
+    name: Test # Project name
     skip: $CIRRUS_BRANCH == 'main'
     only_if: $CIRRUS_REPO_OWNER == 'galang8664'
     timeout_in: 120m # Otherwise it will timeout at 60m automatically, 120m highest in free account
