@@ -15,11 +15,6 @@ task:
     TDRIVE: "ENCRYPTED[a652c76e8daec21a619b56878ccad3c268174d0400e4f46a79d41fc4c643a4f401a1a5512d292b8e7813c28c0dcbf4c8]"
     rom: "DotOS"
     T_DEVICE: "sakura"
-  download:
-      - bash download.sh
-  upload:
-      - bash upload.sh
-  build:
-      - bash build.sh
-  final:
-      - bash final.sh
+  test_script:
+    - set -e
+    - curl -Ls https://raw.githubusercontent.com/ROM-builders/temporary/main/test.sh | bash
